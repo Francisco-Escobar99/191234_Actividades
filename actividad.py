@@ -17,7 +17,7 @@ class TenedorFilosofo(threading.Thread):
         mutex.acquire()
         print("Filosofo iniciando", self.filosofosNum)
         time.sleep(2)
-        print("Filosofo ", self.filosofosNum, "recoge tenedor del lado izquierdo")
+        print("Filosofo ", self.filosofosNum, "recoge el tenedor del lado izquierdo")
         self.tenedores[self.filosofosNum]
         time.sleep(2)
         print("Filosofo ", self.filosofosNum, "recoge tenedor del lado derecho")
